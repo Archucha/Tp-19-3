@@ -30,7 +30,7 @@ namespace Tp_19_3
                     break;
 
                 default:
-
+                    Console.WriteLine("Ingrese una opcion valida");
                     break;
             }
         }
