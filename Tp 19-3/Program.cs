@@ -21,14 +21,26 @@ namespace Tp_19_3
                         i++;
                     }
                     i = 0;
+                    Console.WriteLine("Las canciones ingresadas son");
                     while (i<5)
                     {
-                        Console.WriteLine("Las canciones ingresadas son");
                         Console.WriteLine(canciones[i]);
                         i++;
                     }
                     break;
-
+                case 2:
+                    string[] canciones2 = new string[5];
+                    for (i = 0; i < 5; i++)
+                    {
+                        Console.WriteLine("Ingrese el nombre de una cancion");
+                        canciones2[i] = Console.ReadLine();
+                    }
+                    Console.WriteLine("Las canciones ingresadas son");
+                    for (i = 0; i < 5; i++)
+                    {
+                        Console.WriteLine(canciones2[i]);
+                    }
+                    break;
                 default:
                     Console.WriteLine("Ingrese una opcion valida");
                     break;
