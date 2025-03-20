@@ -41,6 +41,26 @@ namespace Tp_19_3
                         Console.WriteLine(canciones2[i]);
                     }
                     break;
+                case 3:
+                    string[] nombres = new string[5];
+                    int[] edad = new int[5];
+                    while (i < 5)
+                    {
+                        Console.WriteLine("Ingrese el nombre");
+                        nombres[i] = Console.ReadLine();
+                        Console.WriteLine("Ingrese la edad");
+                        edad[i] = int.Parse(Console.ReadLine()); 
+                        i++;
+                    }
+                    Console.WriteLine("Los datos ingresados son");
+                    i = 0;
+                    while (i < 5)
+                    {
+                        Console.WriteLine("Nombre: " + nombres[i]);
+                        Console.WriteLine("Edad: " + edad[i]);
+                        i++;
+                    }
+                    break;
                 default:
                     Console.WriteLine("Ingrese una opcion valida");
                     break;
