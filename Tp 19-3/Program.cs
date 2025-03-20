@@ -78,6 +78,24 @@ namespace Tp_19_3
                         Console.WriteLine("Edad: " + edad2[i]);
                     }
                     break;
+                case 5:
+                    int[] num1 = new int[5];
+                    int[] num2 = new int[5];
+                    int[] resultado = new int[5];
+                    for (i = 0; i < 5; i ++)
+                    {
+                        Console.WriteLine("Ingrese un numero");
+                        num1[i] = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingrese otro numero");
+                        num2[i] = int.Parse(Console.ReadLine());
+                        resultado[i] = num1[i] + num2[i];
+                    }
+                    Console.WriteLine("La suma de todos los numeros es:");
+                    for (i = 0; i < 5; i++)
+                    {
+                        Console.WriteLine($"Resultado {i+1}: {resultado[i]}");
+                    }
+                    break;
                 default:
                     Console.WriteLine("Ingrese una opcion valida");
                     break;
