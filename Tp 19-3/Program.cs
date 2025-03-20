@@ -61,6 +61,23 @@ namespace Tp_19_3
                         i++;
                     }
                     break;
+                case 4:
+                    string[] nombres2 = new string[5];
+                    int[] edad2 = new int[5];
+                    for (i = 0; i < 5; i++)
+                    {
+                        Console.WriteLine("Ingrese el nombre");
+                        nombres2[i] = Console.ReadLine();
+                        Console.WriteLine("Ingrese la edad");
+                        edad2[i] = int.Parse(Console.ReadLine());
+                    }
+                    Console.WriteLine("Los datos ingresados son");
+                    for (i = 0; i < 5; i++)
+                    {
+                        Console.WriteLine("Nombre: " + nombres2[i]);
+                        Console.WriteLine("Edad: " + edad2[i]);
+                    }
+                    break;
                 default:
                     Console.WriteLine("Ingrese una opcion valida");
                     break;
